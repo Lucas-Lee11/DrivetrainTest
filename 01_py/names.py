@@ -1,7 +1,7 @@
 """
 Christopher Liu, Lucas Lee, Lucas Tom-Wong, Zhaoyu Lin
 SoftDev
-A Program to Print a SoftDev Student's Name
+k01 -- A Program to Print a SoftDev Student's Name
 2021-09-21
 """
 
