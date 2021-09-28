@@ -2,7 +2,7 @@
 Shyne Choi, Lucas Lee, Edwin Zheng
 SoftDev
 k05 -- A Program to Print a SoftDev Student's Name But Amalgamated
-2021-27-21
+2021-28-21
 """
 
 # SUMMARY OF TRIO DISCUSSION
@@ -47,7 +47,7 @@ def addToList():
     while True:
         period = input("What period is the student in?\n")
 
-        # Checks if the person whishes to stop typing
+        # Checks if the person wishes to stop typing
         if period.strip().lower() == 'exit':
 
             # Ensures there is a name to choose
