@@ -1,4 +1,4 @@
-#k 06 Readme
+# k06 Readme
 Team Blind Elmo
 Lucas Lee (Lewis Cass), Zhaoyu Lin
 
