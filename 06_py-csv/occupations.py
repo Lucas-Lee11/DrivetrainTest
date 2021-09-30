@@ -21,7 +21,6 @@ import csv
 import random
 
 def read_occupations(filename):
-
     dict = {}
     with open(filename) as f:
          lines = csv.reader(f, delimiter=',')
@@ -41,6 +40,10 @@ def get_random_occupation(dict):
 
     # Chooses a random key using the values as weights
     # Returns a list with one element
+    print(list(dict.keys()))
+    print(list(dict.values()))
+
+
     choice = random.choices(list(dict.keys()), weights = list(dict.values()), k = 1)
 
     return choice[0] # Picks out the first element
