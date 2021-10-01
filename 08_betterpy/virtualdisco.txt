@@ -1,24 +1,32 @@
 Iced Macchiato: Christopher Liu, Tina Nguyen, Lucas Lee
 SoftDev
-K08 -- Cross Pollination
+K08 -- Virtual Insanity
 2021-09-30
 
-Questions:
-* How should the remaining 0.2% not assigned to a job class be handled?
-* What is a defaultdict?
+python3 -m venv ~/myherozero
 
-Comments:
-* Different groups interpreted the remaining 0.2% (the occupations list did not
-    add up to 100%) in different ways, opting for nothing, "Other",
-    "Unemployed", etc.
-* Many groups split the two tasks (file reading and weighted random selection)
-    into two methods.
-* Many groups did not follow Python capitalization conventions, using camelCase
-    to name variables and methods instead of the conventional snake_case.
+This command creates a new virtual environment at the given directory, in this
+case ~/myherozero, and creates the directory if it doesn't exist. It executes
+the contents of the venv module (as indicated by the -m flag).
 
-Concerns:
-* Using init() as a method name is likely to be confused with __init__().
-* Using .keys() and .values() would only work after Python 3.7 because in prior
-    versions the order of the keys and values would not necessarily correspond
-    with each other. In previous versions, we would have had to use .items()
-    and split the returned tuples.
+The venv module is a built-in module to create virtual environments, which
+are isolated runtimes that allow Python users to keep and update packages
+within a single project. Within a virtual environment, programs will have
+access to only the modules installed in the virtual environment directory,
+allowing programmers to manage and update package versions.
+
+A package contains modules, which are Python files, with potentially useful
+methods in them. Those methods could save you from writing thousands of lines
+of code and do things (like act as a web microframework) without us needing to
+fully understand the underlying complexity. You would get these packages from
+https://pypi.org or with the pip command.
+
+Why do we use virtual environments? It's super helpful to be able to keep all
+of the dependencies (the packages a project uses) in one place, where we can
+manage and update them without worrying about how other projects or the rest of
+the Python installation affects it.
+
+
+Sources:
+* Python venv documentation (https://docs.python.org/3/tutorial/venv.html)
+* Python glossary (https://docs.python.org/3/glossary.html#term-virtual-environment)
