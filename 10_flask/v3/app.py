@@ -1,5 +1,5 @@
 """
-Lucas Lee (Lewis Cass), Zhaoyu Lin, Lucas Tom Wong (LTW)
+Blind Elmo: Lucas Lee (Lewis Cass), Zhaoyu Lin, Lucas Tom Wong (LTW)
 SoftDev
 k10 -- Futher Thoughts on Flask App Varations
 2021-10-05
@@ -17,6 +17,7 @@ def hello_world():
 app.debug = True
 app.run()
 
+
 """
 Predictionss
 - Same as v2, printing two messages to the terminal
@@ -29,6 +30,8 @@ Predictionss
 
 Notes
 - Webpage acts as expected, continues to run indefinitely
+- Debug mode is set on, and gives a debugging PIN
+    - Redeploys page on changes to the file
 - Messages only appear on the terminal after the webpage is loaded
 - Warns on being a "development server" and not to actually use for production
 - No HTML tags for the message, just a raw string "No hablo queso!"

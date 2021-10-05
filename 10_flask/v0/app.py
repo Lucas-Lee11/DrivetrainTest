@@ -1,5 +1,5 @@
 """
-Lucas Lee (Lewis Cass), Zhaoyu Lin, Lucas Tom Wong (LTW)
+Blind Elmo: Lucas Lee (Lewis Cass), Zhaoyu Lin, Lucas Tom Wong (LTW)
 SoftDev
 k10 -- Futher Thoughts on Flask App Varations
 2021-10-05
