@@ -12,20 +12,23 @@
             2021-10-13
         </h2>
 
-        <strong>Random choice: {{choice}}</strong>
+        <strong>Random choice: {{choice}}</strong><br>
+        <a href="{{occupations[choice][1]}}">Helpful Link!</a>
+
         <hr>
-        <table>
+        <table style="border-spacing: 20px 0">
             <tr>
 
                 <td><strong>Occupation</strong></td>
                 <td><strong>Percentage</strong></td>
-
+                <td><strong>Link</strong></td>
             </tr>
 
-            {%for occupation, percentage in occupations.items()%}
+            {%for occupation, tuple in occupations.items()%}
             <tr>
                 <td>{{occupation}}</td>
-                <td>{{percentage}}</td>
+                <td>{{tuple[0]}}</td>
+                <td><a href="{{tuple[1]}}">{{tuple[1]}}</a></td>
             </tr>
             {%endfor%}
         </table>
