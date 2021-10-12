@@ -61,8 +61,10 @@ def read_occupations(filename: str) -> dict:
 
 
 def choose_from_dict(occupations: dict) -> str:
-    """Picks an occupation randomly using the percentage weights in the given
-    occupations dictionary."""
+    """
+    Picks an occupation randomly using the percentage weights in the given
+    occupations dictionary.
+    """
 
     job_classes = list(occupations.keys())
     tuples = list(occupations.values())
@@ -75,8 +77,10 @@ def choose_from_dict(occupations: dict) -> str:
 
 
 def random_occupation(filename: str) -> str:
-    """Returns a random occupation based on the job classes and percentage
-    weights provided in the given CSV file."""
+    """
+    Returns a random occupation based on the job classes and percentage
+    weights provided in the given CSV file.
+    """
 
     occupations = read_occupations(filename)
     return choose_from_dict(occupations)

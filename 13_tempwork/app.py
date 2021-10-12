@@ -14,10 +14,9 @@ app = Flask(__name__)  # create instance of class Flask
 
 @app.route("/occupyflaskst")  # assign fxn to route
 def display_occupation():
-    '''
-    Uses a csv filename with the occupations module to create a occupation dictionary containing occupations as a key and a tuple containing a percentage and link as values
-    Then creates a site at /occupyflaskst serving a template displaying the information in the dictionary
-    '''
+    """
+    Creates a site at /occupyflaskst serving a template displaying the information in ./data/occupations.csv along with a randomly selected job
+    """
 
 
     jobs = occupations.read_occupations("./data/occupations.csv")
