@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+Forgotten Charger: Lewis Cass, Aryaman Goenka, Oscar Wang
+Softdev
+K15: Cookie and Sessions Introduction
+2021-10-19
+-->
+
+<html>
+    <head>
+        <title>RESPONSE PAGE</title>
+    </head>
+    <body>
+        <h1>
+            Forgotten Charger: Lewis Cass, Aryaman Goenka, Oscar Wang <br>
+            Softdev <br>
+            K15: Cookie and Sessions Introduction <br>
+            2021-10-19 <br>
+        </h1>
+        {% if successful %}
+            <p>This is <b>{{ username }}'s</b> auto-generated page!</p>
+            <p>The request method used was <b>{{ method }}</b></p>
+            <p>Salutations World!</p>
+        {%else%}
+            <p>Login unsuccessful!</p>
+            <p>Reason: {{reason}}</p>
+        {%end if%}
+    </body>
+</html>
