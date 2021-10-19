@@ -12,23 +12,15 @@ app = Flask(__name__)
 USERNAME = 'user'
 PASSWORD = 'pass'
 
+app.secret_key = 'forgotten charger'
+
 @app.route('/')
 def login():
 
     return render_template('login.html')
 
-@app.route('/auth')
-def response(methods=['GET', 'POST']):
-    print("***DIAG: this Flask obj ***")
-    print(app)
-    print("***DIAG: request obj ***")
-    print(request)
-    print("***DIAG: request.args ***")
-    print(request.args) #dictionary containing the queries as entries
-    print("***DIAG: request.headers ***")
-    print(request.headers)
-
-
+@app.route('/auth', methods=['GET', 'POST'])
+def auth():
     method = request.method
 
     # Make sure this is only accessed via a POST request
