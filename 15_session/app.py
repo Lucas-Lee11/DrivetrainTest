@@ -35,6 +35,8 @@ def response():
 
         # Need to check key before use in order to avoid crash
         if session.get('username') is not None:
+
+            # If session is stored, automatically render page
             username = session['username']
             return render_template('response.html', username=username, successful=True, reason='n/a')
         else:
@@ -71,6 +73,7 @@ def logout():
     if session.get('username') is not None:
         session.pop('username')
 
+    # After logout, return to login page
     return redirect(url_for('login'))
 
 if __name__ == '__main__':

@@ -6,5 +6,8 @@ K15: Cookie and Sessions Introduction
 Notes
 - Need to specify the route accepts a 'POST' method before it can be used
     - place in the `@app.route('/route_name', methods=['GET', 'POST'])`
+- When doing a post request with a form, use `request.form` instead of `request.args` in order to access the form information
 - Need to check if a session key exists before accessing it, otherwise a crash might happen if it isn't there
     - done with `session.get('key')`
+- Use `redirect()` method in order to redirect the user to an appropriate page, perhaps if they are not meant to be there
+    - can use the `url_for()` method as well in order to get the correct url for some route method
