@@ -29,12 +29,13 @@ K15: Cookie and Sessions Introduction
     <h3>
         Enter your username below to proceed.
     </h3>
-    <form action="/auth" method="post"> <!--- sends a get request to /auth -->
+    <!--- sends a post request to /auth -->
+    <form action="/auth" method="post">
         <p>Username</p>
         <input type="text" name="username">
         <p>Password</p>
         <input type="password" name="password">
-        <input type="submit" name="sub1">
+        <input value="login" type="submit" name="sub1">
     </form>
     <br>
 </body>

@@ -19,29 +19,36 @@ def login():
 
     # Check for session existance
     if session.get('username') is not None:
+
+        # If already logged in, send them to the response page
         return redirect(url_for('response'))
     else:
+
+        # If not logged in, show login page
         return render_template('login.html')
 
 @app.route('/auth', methods=['GET', 'POST'])
 def response():
     method = request.method
 
-    # Make sure this is only accessed via a POST request
     if method == 'GET':
+
         # Need to check key before use in order to avoid crash
         if session.get('username') is not None:
             username = session['username']
             return render_template('response.html', username=username, successful=True, reason='n/a')
         else:
+            # If session does not exist, send them back to login page
             return redirect(url_for('login'))
-            
+
     if method == 'POST':
 
+        # Get information from request.form since it is submitted via post
         username = request.form['username']
         password = request.form['password']
 
 
+        # Check username and password and get the reason
         if username != USERNAME:
             reason = 'Bad username'
             successful = False
@@ -60,6 +67,7 @@ def response():
 @app.route('/logout', methods=['GET', 'POST'])
 def logout():
 
+    # Once again check for a key before popping it
     if session.get('username') is not None:
         session.pop('username')
 

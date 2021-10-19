@@ -18,11 +18,12 @@ K15: Cookie and Sessions Introduction
             2021-10-19 <br>
         </h1>
         {% if successful %}
-            <p>This is <b>{{ username }}'s</b> auto-generated page!</p>
-            <p>Salutations World!</p>
+            <p>Welcome, {{ username }}, to the</p>
+            <h1>🅂🄾🄲🄸🄴🅃🅈   🄾🄵   🄵🄾🅁🄶🄾🅃🅃🄴🄽   🄲🄷🄰🅁🄶🄴🅁🅂!</h1>
 
-            <form action="/logout" method="post"> <!--- sends a password request to /logout -->
-                <input type="submit" name="logout">
+            <!--- sends a post request to /logout -->
+            <form action="/logout" method="post">
+                <input value="logout" type="submit" name="logout">
             </form>
         {%else%}
             <p>Login unsuccessful!</p>
