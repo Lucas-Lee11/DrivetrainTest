@@ -1,0 +1,10 @@
+Forgotten Charger: Lewis Cass, Aryaman Goenka, Oscar Wang
+Softdev
+K15: Cookie and Sessions Introduction
+2021-10-19
+
+Notes
+- Need to specify the route accepts a 'POST' method before it can be used
+    - place in the `@app.route('/route_name', methods=['GET', 'POST'])`
+- Need to check if a session key exists before accessing it, otherwise a crash might happen if it isn't there
+    - done with `session.get('key')`

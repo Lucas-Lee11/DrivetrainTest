@@ -19,11 +19,15 @@ K15: Cookie and Sessions Introduction
         </h1>
         {% if successful %}
             <p>This is <b>{{ username }}'s</b> auto-generated page!</p>
-            <p>The request method used was <b>{{ method }}</b></p>
             <p>Salutations World!</p>
+
+            <form action="/logout" method="post"> <!--- sends a password request to /logout -->
+                <input type="submit" name="logout">
+            </form>
         {%else%}
             <p>Login unsuccessful!</p>
             <p>Reason: <strong>{{reason}}</strong></p>
         {%endif%}
+
     </body>
 </html>

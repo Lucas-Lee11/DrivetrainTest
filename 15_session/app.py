@@ -14,39 +14,56 @@ PASSWORD = 'pass'
 
 app.secret_key = 'forgotten charger'
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def login():
 
-    return render_template('login.html')
+    # Check for session existance
+    if session.get('username') is not None:
+        return redirect(url_for('response'))
+    else:
+        return render_template('login.html')
 
 @app.route('/auth', methods=['GET', 'POST'])
-def auth():
+def response():
     method = request.method
 
     # Make sure this is only accessed via a POST request
     if method == 'GET':
-        return redirect(url_for('login'))
+        # Need to check key before use in order to avoid crash
+        if session.get('username') is not None:
+            username = session['username']
+            return render_template('response.html', username=username, successful=True, reason='n/a')
+        else:
+            return redirect(url_for('login'))
+            
     if method == 'POST':
 
         username = request.form['username']
         password = request.form['password']
 
 
-        if username != 'user':
+        if username != USERNAME:
             reason = 'Bad username'
             successful = False
-        elif password != 'pass':
+        elif password != PASSWORD:
             reason = 'Bad password'
             successful = False
         else:
             # Store user info into a cookie
             session['username'] = username
-            session['password'] = password
 
             reason = 'n/a'
             successful = True
 
-        return render_template('response.html', username=username, method=request.method, successful=successful, reason=reason)
+        return render_template('response.html', username=username, successful=successful, reason=reason)
+
+@app.route('/logout', methods=['GET', 'POST'])
+def logout():
+
+    if session.get('username') is not None:
+        session.pop('username')
+
+    return redirect(url_for('login'))
 
 if __name__ == '__main__':
     app.debug = True
