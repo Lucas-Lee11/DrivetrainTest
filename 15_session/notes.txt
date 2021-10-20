@@ -11,3 +11,7 @@ Notes
     - done with `session.get('key')`
 - Use `redirect()` method in order to redirect the user to an appropriate page, perhaps if they are not meant to be there
     - can use the `url_for()` method as well in order to get the correct url for some route method
+
+Room Tour
+- Many groups kept the user on one page that just rendered different templates rather than having many routes for each purpose
+- Lack of error handling with trying to access routes user isn't supposed to or with methods they aren't suppsed to use
