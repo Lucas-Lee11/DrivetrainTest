@@ -20,6 +20,7 @@ c = db.cursor()               #facilitate db ops -- you will use cursor to trigg
 
 
 # Clear the table first
+# Re-creating tables when they already exist causes errors
 command = "DROP TABLE IF EXISTS students"
 c.execute(command)
 
@@ -37,10 +38,11 @@ with open(filename) as f:
         age = int(row['age'])
         id = int(row['id'])
 
+        # Quotes around `name` since it is a text field
         command = f"""INSERT INTO students VALUES("{name}", {age}, {id})"""
         c.execute(command)
 
-# Clear the table first
+# Clear the table first to prevent errors
 command = "DROP TABLE IF EXISTS courses"
 c.execute(command)
 
@@ -57,6 +59,7 @@ with open(filename) as f:
         mark = int(row['mark'])
         id = int(row['id'])
 
+        # Quotes around code since it is a text field
         command = f"""INSERT INTO courses VALUES("{code}", {mark}, {id})"""
         c.execute(command)
 
