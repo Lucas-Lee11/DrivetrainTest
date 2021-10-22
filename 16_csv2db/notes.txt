@@ -1,0 +1,11 @@
+Forgotten Charger: Lewis Cass, Aryaman Goenka, Oscar Wang
+Softdev
+K16: Database and SQL Introduction
+2021-10-25
+
+Notes
+- The 'discobandit.db' file stores the information used by sqlite and persists between executions
+    - File will be created if it doesn't exist on attempting to connect
+    - Use `sqlite3 discobandit.db` to activate sqlite using that database file
+- Trying to create a table that already exists causes an error
+    - Solved by dropping each table beforehand if it exists before creating it again
