@@ -3,6 +3,7 @@ Forgotten Charger: Lewis Cass, Aryaman Goenka, Oscar Wang
 Softdev
 K16: Database and SQL Introduction
 2021-10-25
+time spent: ~90 min
 '''
 
 import sqlite3   #enable control of an sqlite database
