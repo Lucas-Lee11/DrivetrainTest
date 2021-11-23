@@ -1,0 +1,12 @@
+FTC>FRC: Lucas Lee, Naomi Naranjo
+Softdev
+K19: REST APIs
+2021-11-24
+
+- When reading key from file, trailing newline needs to be removed first
+- API key passed as a query parameter to the url
+- API returns information in JSON format
+- Using the `requests` library to attempt http get requests to the API url
+    - `request.get()` returns the data returned when a get request is called given a url and the query parameters
+    - `r.json()` decodes the json data and turns the returned data into a dictionary
+    - For instance, the url to the image is stored in the 'hdurl' key and the explanation of the image is in the 'explanation' key

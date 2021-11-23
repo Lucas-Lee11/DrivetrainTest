@@ -1,0 +1,11 @@
+FTC>FRC: Lucas Lee, Naomi Naranjo
+SoftDev
+k18 - Inline CSS
+time spent: 1
+
+generator: https://loremipsum.io/
+
+- Width can be specified in percentage of the screen
+- Bullet points in lists can be removed by setting list-style-type to none
+- CSS float allows for elements to be specifically placed on the page
+    - needs to be cleared by elements below or else the elements will overlap
