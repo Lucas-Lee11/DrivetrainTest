@@ -1,0 +1,10 @@
+FTC>FRC: Lucas Lee, Naomi Naranjo
+Softdev
+K22: Foundation
+2021-11-24
+
+Notes!
+- Need to link to library using CDN link
+    - Extra links to JavaScript libraries needed for certain features like dropdowns
+    - JQuery is needed to be linked first before the foundation libraries
+    - Also need to call `$(document).foundation();` as part of a script to make everything work

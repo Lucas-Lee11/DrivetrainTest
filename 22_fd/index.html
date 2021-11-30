@@ -1,3 +1,10 @@
+<!--
+FTC>FRC: Lucas Lee, Naomi Naranjo
+Softdev
+K22: Foundation
+2021-11-24
+!-->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -8,6 +15,7 @@
     <!-- Compressed CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
 
+    <!-- MotionUI Animations -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" crossorigin="anonymous">
 </head>
 
@@ -34,6 +42,69 @@
                 <li><button type="button" class="button">Search</button></li>
             </ul>
         </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+        <div class="cell"><h1>Welcome to Foundation!</h1></div>
+        <div class="cell">To get foundation working, simply link to the following CSS link <code>https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css</code></div>
+        <div class="cell">You may also want to link the core foundation JavaScript library at <code>https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js</code></div>
+        <div class="cell">Links to any needed utilities can be found at <code>https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/plugins/</code></div>
+        <div class="cell">Documentation on different foundation components can be found at <code>https://get.foundation/sites/docs/</code></div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+        <div class="cell"><h2>Using Grid Cells</h2></div>
+        <div class="cell">The grid is 12 "cells" wide and can adapt to different screen widths</div>
+        <div class="cell">It comes with the core features of foundation and requires no extra links</div>
+        <div class="cell medium-6 large-8">
+            This is 8 cells wide in a large screen, but 6 cells in a medium one!
+            <span class="badge success">3</span>
+            <span class="badge alert">A</span>
+            <span class="badge warning">B</span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+        </div>
+
+        <div class="cell medium-6 large-4">
+            This is 4 cells wide in a large screen, but 6 cells in a medium one! Spacing will change as you change the size of the window that its in
+        </div>
+
+        <div class="cell">
+            Outer container div has class "grid-x" and each cell is a div with class "cell". You can specify size for each type of screen using the class "[small/medium/large]-[number of cells to take up]"
+        </div>
+
+
+    </div>
+
+    <div class="grid-x grid-padding-x">
+        <div class="cell"><h2>Buttons</h2></div>
+        <div class="cell">Simply add the "button" class to any a or button html tag to get it working</div>
+
+        <div class="cell">
+            <!-- Anchors (links) -->
+            <a href="#about" class="button">Look</a>
+            <a href="#features" class="button">At</a>
+
+            <!-- Buttons (actions) -->
+            <button class="submit success button">These</button>
+            <button type="button" class="alert button">Buttons</button>
+        </div>
+
+        <div class="cell">
+            <a class="button expanded" href="#">Such Expand</a>
+        </div>
+
+        <div class="cell">Inspect and take a look for the button html tags to get a code example!</div>
+
+    </div>
+
+    <div class="grid-x grid-padding-x">
+        <div class="cell"><h2>Dropdown Menus</h2></div>
+        <div class="cell">Requires the dropdownMenu JavaScript library</div>
+        <div class="cell"> Also requires the use of the keyboard, box, nest, and touch utility libraries</div>
     </div>
 
     <div class="row">
@@ -80,58 +151,60 @@
     </div>
 
 
+
+    <div class="grid-x grid-padding-x">
+        <div class="cell"><h2>Closables</h2></div>
+        <div class="cell">
+            <div class="callout" data-closable>
+                <p>You can so totally close this!</p>
+                <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+        <div class="cell">
+            <div class="success callout" data-closable="slide-out-right">
+                <p>You can close me too, and I close using a Motion UI animation.</p>
+                <p>Make sure to make a CSS link to https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css in order to make the animation work! </p>
+                <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
     <div class="grid-x grid-padding-x">
         <div class="cell">
-            <!-- Anchors (links) -->
-            <a href="#about" class="button">Look</a>
-            <a href="#features" class="button">At</a>
-
-            <!-- Buttons (actions) -->
-            <button class="submit success button">These</button>
-            <button type="button" class="alert button">Buttons</button>
-        </div>
-
-    </div>
-
-
-    <div class="grid-x grid-padding-x">
-        <div class="cell">Using Grid Cells</div>
-        <div class="cell"> The grid is 12 "cells" wide and can adapt to different screen widths</div>
-        <div class="cell medium-6 large-8">
-            This is 8 cells wide in a large screen, but 6 cells in a medium one!
-            <span class="badge success">3</span>
-            <span class="badge alert">A</span>
-            <span class="badge warning">B</span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
+            <h2>Sliders</h2>
 
         </div>
-
-        <div class="cell medium-6 large-4">
-            This is 4 cells wide in a large screen, but 6 cells in a medium one! Spacing will change as you change the size of the window that its in
+        <div class="cell">
+            Requires the use of the slider JavaScript library and the motion, triggers, keyboard, and touch JavaScript utilities
         </div>
-
-
-    </div>
-
-    <div class="callout" data-closable>
-        <p>You can so totally close this!</p>
-        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-    <div class="success callout" data-closable="slide-out-right">
-        <p>You can close me too, and I close using a Motion UI animation.</p>
-        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-            <span aria-hidden="true">&times;</span>
-        </button>
+        <div class="cell">
+            <div class="slider" data-slider data-initial-start="50" data-end="200">
+                <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                <span class="slider-fill" data-slider-fill></span>
+                <input type="hidden">
+            </div>
+        </div>
     </div>
 
 
 
 
+
+    <div class="switch">
+        <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
+        <label class="switch-paddle" for="exampleSwitch">
+            <span class="show-for-sr">Download Kittens</span>
+        </label>
+    </div>
+
+
+
+    <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- Compressed JavaScript -->
@@ -153,9 +226,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/plugins/foundation.util.imageLoader.min.js" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/plugins/foundation.util.triggers.min.js" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/plugins/foundation.dropdownMenu.min.js" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/plugins/foundation.slider.min.js" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/plugins/foundation.orbit.min.js" crossorigin="anonymous"></script>
+
 
     <script>
         $(document).foundation();
