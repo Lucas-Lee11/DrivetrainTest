@@ -3,41 +3,165 @@
 
 <head>
     <meta charset="utf-8">
-
-    <!-- Compressed JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+    <title>Using Foundation </title>
 
     <!-- Compressed CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/css/master.css">
-
-
-    <title>Using Foundation </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="grid-x grid-padding-x">
-        <div class="cell">Using Grid Cells</div>
-        <div class="cell medium-6 large-8">12/6/8 cells</div>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Example Navbar Menu!</li>
+                <li>
+                    <a href="#">One</a>
+                    <ul class="menu vertical">
+                        <li><a href="#">Inner</a></li>
+                        <li><a href="#">Dropdown</a></li>
+                        <li><a href="#">Content</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><input type="search" placeholder="Search"></li>
+                <li><button type="button" class="button">Search</button></li>
+            </ul>
+        </div>
     </div>
 
-    <form>
-        <div class="grid-container">
-            <div class="grid-x grid-padding-x">
-                <div class="medium-6 cell">
-                    <label>Input Label
-                        <input type="text" placeholder=".medium-6.cell">
-                    </label>
-                </div>
-                <div class="medium-6 cell">
-                    <label>Input Label
-                        <input type="text" placeholder=".medium-6.cell">
-                    </label>
-                </div>
-            </div>
+    <div class="row">
+        <div class="columns">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li>
+                    <a href="#Item-1">Item 1</a>
+                    <ul class="menu">
+                        <li><a href="#Item-1A">Item 1A</a></li>
+                        <li>
+                            <a href="#Item-1B">Item 1B</a>
+                            <ul class="menu">
+                                <li><a href="#Item-1Bi">Item 1B i</a></li>
+                                <li><a href="#Item-1Bii">Item 1B ii</a></li>
+                                <li>
+                                    <a href="#Item-1Biii">Item 1B iii</a>
+                                    <ul class="menu">
+                                        <li><a href="#Item-1Biiialpha">Item 1B iii alpha</a></li>
+                                        <li><a href="#Item-1Biiiomega">Item 1B iii omega</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#Item-1Biv">Item 1B iv</a>
+                                    <ul class="menu">
+                                        <li><a href="#Item-1Bivalpha">Item 1B iv alpha</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#Item-1C">Item 1C</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Item-2">Item 2</a>
+                    <ul class="menu">
+                        <li><a href="#Item-2A">Item 2A</a></li>
+                        <li><a href="#Item-2B">Item 2B</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Item-3">Item 3</a></li>
+                <li><a href="#Item-4">Item 4</a></li>
+            </ul>
         </div>
-    </form>
+    </div>
+
+
+    <div class="grid-x grid-padding-x">
+        <div class="cell">
+            <!-- Anchors (links) -->
+            <a href="#about" class="button">Look</a>
+            <a href="#features" class="button">At</a>
+
+            <!-- Buttons (actions) -->
+            <button class="submit success button">These</button>
+            <button type="button" class="alert button">Buttons</button>
+        </div>
+
+    </div>
+
+
+    <div class="grid-x grid-padding-x">
+        <div class="cell">Using Grid Cells</div>
+        <div class="cell"> The grid is 12 "cells" wide and can adapt to different screen widths</div>
+        <div class="cell medium-6 large-8">
+            This is 8 cells wide in a large screen, but 6 cells in a medium one!
+            <span class="badge success">3</span>
+            <span class="badge alert">A</span>
+            <span class="badge warning">B</span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+        </div>
+
+        <div class="cell medium-6 large-4">
+            This is 4 cells wide in a large screen, but 6 cells in a medium one! Spacing will change as you change the size of the window that its in
+        </div>
+
+
+    </div>
+
+    <div class="callout" data-closable>
+        <p>You can so totally close this!</p>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="success callout" data-closable="slide-out-right">
+        <p>You can close me too, and I close using a Motion UI animation.</p>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/plugins/foundation.core.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/plugins/foundation.util.keyboard.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/plugins/foundation.util.nest.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/plugins/foundation.util.box.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/plugins/foundation.util.touch.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/plugins/foundation.util.motion.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/plugins/foundation.util.timer.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/plugins/foundation.util.imageLoader.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/plugins/foundation.dropdownMenu.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/plugins/foundation.orbit.min.js" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).foundation();
+    </script>
+
+
 </body>
 
 </html>
