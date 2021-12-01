@@ -1,0 +1,18 @@
+FTC>FRC: Lucas Lee, Naomi Naranjo
+Softdev
+K23: Bootstrap
+2021-12-02
+
+DISCO
+- Bootstrap seems to use less JavaScript for components, not needed for dropdown menus
+
+QCC
+
+Q0
+- The tutorial was very helpful in gettin started and linking the proper external files
+    - Able to get a bootstrap website working just from their source code
+- Took a look at bootstrap documentation for some more information on components
+
+Q1
+- We like foundation a bit more for the style of layout and many different types of components
+- However, bootstrap seems to have more documentation availible and is more clear
