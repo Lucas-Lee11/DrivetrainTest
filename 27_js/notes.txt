@@ -1,0 +1,19 @@
+EELs :: Eliza Knapp, Ella Krechmer, Lucas Lee
+Softdev
+K27 -- Scheme&JS
+2022-02-04
+time spent: 1
+
+DISCO
+- Use // to comment in JS
+- Use the `function` keyword to declare a function in JS
+- Don't need to declare types for the function parameters or the return
+    - Return different types in a function
+- Don't need to declare type for any variable
+    - Use `var` for variables that change
+    - Use `const` for constants
+- Not object oriented, can declare functions outside of objects
+
+QCC
+- Should we store the function into a variable or just name it directly? What's different about each?
+- 
