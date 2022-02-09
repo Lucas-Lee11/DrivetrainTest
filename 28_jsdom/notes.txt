@@ -1,0 +1,6 @@
+EELs :: Eliza Knapp, Ella Krechmer, Lucas Lee
+SoftDev pd0
+K28 -- Manipulating the DOM
+2022-02-08
+
+- Use `document.write()` in script tags to insert JavaScript output into HTML

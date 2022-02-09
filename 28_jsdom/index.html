@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<!--
+     EELs :: Eliza Knapp, Ella Krechmer, Lucas Lee
+     SoftDev pd0
+     K28 -- Manipulating the DOM
+     2022-02-08
+-->
+
+<html lang="en">
+<!-- HTML file for exploring JavaScript interactions with the DOM -->
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        .red {
+            color: #ff0000;
+        }
+
+        .green {
+            color: #00ff00;
+        }
+
+        .blue {
+            color: #0000ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script src="dommy_consolery.js"></script>
+    <h1 id="h" class="blue">Hello World!</h1>
+
+    <div id="div1" class="green">This is a div</div>
+    <div id="div2">This is a second div</div>
+    <div class="blue">This is a toid div</div>
+
+    <ol id="thelist">
+        <li class="">item 0</li>
+        <li class="green blue">item 1</li>
+        <li class="green blue">item 2</li>
+        <li class="red green blue">item 3</li>
+        <li class="red green blue">item 4</li>
+        <li class="green blue">item 5</li>
+        <li class="green blue">item 6</li>
+        <li class="">item 7</li>
+    </ol>
+
+    <h2>Fib 10</h2>
+    <p>
+        <script type="text/javascript">
+            document.write(fib(10));
+        </script>
+    </p>
+
+    <h2>Fac 9</h2>
+    <p>
+        <script type="text/javascript">
+            document.write(fac(9));
+        </script>
+    </p>
+
+    <h2>Gcd 120, 36</h2>
+    <p>
+        <script type="text/javascript">
+            document.write(gcd(120, 36));
+        </script>
+    </p>
+
+
+
+</body>
