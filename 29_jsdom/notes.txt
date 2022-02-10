@@ -1,0 +1,7 @@
+// Andrew Juang, Lucas Lee
+// SoftDev pd0
+// K29 -- Event Listeners
+// 2022-02-09
+
+- JS script tag should go below the html elements it targets so that it doesnt try to access non-existant objects
+- Use backticks with dollar signs and curly braces to do string interpolations like `${this}`

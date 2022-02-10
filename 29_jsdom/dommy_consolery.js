@@ -115,13 +115,25 @@ var gcd = function(a, b) {
 
 }
 
-var insert = function(){
-    n = Math.floor(Math.random() * 10);
-    m = Math.floor(Math.random() * 100);
+var displayGcd = function(){
+    n = Math.floor(Math.random() * 9) + 1;
+    m = Math.floor(Math.random() * 99) + 1;
 
-    document.getElementById("fib").innerHTML = `fib(${n}) = ${fib(n)}`;
-    document.getElementById("fac").innerHTML = `fac(${n}) = ${fac(n)}`;
     document.getElementById("gcd").innerHTML = `gcd(${n}, ${m}) = ${gcd(n, m)}`;
 }
 
-document.getElementById("but").addEventListener("click", insert)
+var displayFib = function(){
+    n = Math.floor(Math.random() * 10);
+
+    document.getElementById("fib").innerHTML = `fib(${n}) = ${fib(n)}`;
+}
+
+var displayFac = function(){
+    n = Math.floor(Math.random() * 10);
+
+    document.getElementById("fac").innerHTML = `fac(${n}) = ${fac(n)}`;
+}
+
+document.getElementById("gcd-but").addEventListener("click", displayGcd);
+document.getElementById("fib-but").addEventListener("click", displayFib);
+document.getElementById("fac-but").addEventListener("click", displayFac);
