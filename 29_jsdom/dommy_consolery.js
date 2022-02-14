@@ -111,8 +111,6 @@ var gcd = function(a, b) {
     r = a % b;
     if(r == 0) return b;
     else return gcd(b, r);
-    return b;
-
 }
 
 var displayGcd = function(){
