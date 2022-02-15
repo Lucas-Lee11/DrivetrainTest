@@ -1,0 +1,9 @@
+// EELs :: Eliza Knapp, Ella Krechmer, Lucas Lee
+// SoftDev pd0
+// K30 -- canvas with JS
+// 2022-02-14
+
+- Need to use `ctx.beginPath()` to pick up the pen and ensure shapes aren't connected
+- After defining a canvas arc, need to use `ctx.fill()` to fill the arc
+- The function linked by `addEventListener` is passed the event as a parameter when called
+    - Can access the mouse location if it is a MouseEvent that triggered the function

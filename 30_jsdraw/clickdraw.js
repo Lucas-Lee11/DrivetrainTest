@@ -9,24 +9,37 @@ var mode = "rect";
 
 var toggleMode = (e) => {
     console.log("toggle");
-    if(mode === "rect") mode = "circ";
-    else mode = "rect";
+    if(mode === "rect") {
+      mode = "circ";
+      var name = document.getElementById("buttonToggle")
+      name.innerHTML = "Drawing Circles"
+    }
+    else {
+      mode = "rect";
+      var name = document.getElementById("buttonToggle")
+      name.innerHTML = "Drawing Rectangles"
+    }
 }
 
 var drawRect = (e) => {
     console.log("draw rect");
     mouseX = e.offsetX;
     mouseY = e.offsetY;
-    ctx.strokeStyle = "red";
-    ctx.strokeRect(mouseX, mouseY, 50, 10);
+
+    ctx.beginPath();
+    ctx.fillStyle = "red";
+    ctx.fillRect(mouseX, mouseY, 50, 10);
 }
 
 var drawCircle = (e) => {
     console.log("draw circ");
     mouseX = e.offsetX;
     mouseY = e.offsetY;
-    ctx.strokeStyle = "red";
+
+    ctx.beginPath(); // this thingy resets the drawing so the circles aren't connected
+    ctx.fillStyle = "red";
     ctx.arc(mouseX, mouseY, 50, 0, 2 * Math.PI);
+    ctx.fill();
 }
 
 var draw = (e) => {
