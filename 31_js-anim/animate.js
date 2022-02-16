@@ -22,8 +22,12 @@ var requestID = -1;
 
 var drawDot = (e) => {
 
-    if(requestID === 0) return;
+    if(requestID >= 0) return;
+    else requestID = window.requestAnimationFrame(drawFrame);
 
+}
+
+var drawFrame = (e) => {
     clear(e);
 
     ctx.beginPath(); // this thingy resets the drawing so the circles aren't connected
@@ -37,8 +41,7 @@ var drawDot = (e) => {
     if(growing) radius++;
     else radius--;
 
-    requestID = window.requestAnimationFrame(drawDot);
-
+    requestID = window.requestAnimationFrame(drawFrame);
 }
 
 var stopIt = (e) => {
