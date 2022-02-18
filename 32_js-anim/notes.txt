@@ -1,0 +1,7 @@
+// ELs :: Ella Krechmer, Lucas Lee
+// SoftDev pd0
+// K32 -- screen saver
+// 2022-02-17
+
+- Reflections can just be calculated by reversing one of the dx or dy velocity values
+- If moving by more than one unit per animation frame, might need to check if past the box and bring it in bounds
