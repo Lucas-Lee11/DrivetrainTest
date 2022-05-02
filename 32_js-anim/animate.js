@@ -94,6 +94,9 @@ var drawDvd = (e) => {
 
     x += dx;
     y += dy;
+
+    // dx += Math.floor(Math.random() * 3);
+    // dy += Math.floor(Math.random() * 3);
 }
 
 dotButton.addEventListener("click", drawDot);

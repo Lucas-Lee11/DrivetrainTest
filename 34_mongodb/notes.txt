@@ -1,0 +1,14 @@
+Lucas Lee
+SoftDev pd2
+K34 -- mongodb
+2022-04-27
+
+- allows more flexibility in database structure
+- linking datatables with different types of relationships
+    - embedding data to model 1 to many/1 relationships
+    - arrays of ids for many to many relationships
+- can deal with different schemes at the same time
+    - needs to be synced later
+    - can decide which one in particular to use
+- bucket pattern is nested databases of related data
+- computed pattern allows for storage of precomputed numbers
