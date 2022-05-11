@@ -1,0 +1,8 @@
+Lucas Lee
+SoftDev pd2
+K35 -- mongodb
+2022-05-03
+
+- documents store data, not tables with rows&columns
+- use atlas to store and view data
+    - can use shell to query and filter as well

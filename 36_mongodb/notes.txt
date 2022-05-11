@@ -1,0 +1,8 @@
+Lucas Lee
+SoftDev pd2
+K36 -- mongodb
+2022-05-03
+
+- JSON is JavaScript Object Notation
+- BSON os a binary version of JSON
+- mongodb stores in BSON but can be queried and viewed via JSON

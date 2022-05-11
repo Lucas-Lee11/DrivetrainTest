@@ -1,0 +1,10 @@
+Lucas Lee
+SoftDev pd2
+K37 -- mongodb
+2022-05-09
+
+- query operators can filter data
+    - and, or, nor, not
+- exper can be used to compare various fields in a document
+- array operators used to filter based on array length and content
+- dot operator allows access to sub documents
