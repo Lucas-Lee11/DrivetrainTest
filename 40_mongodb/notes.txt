@@ -1,0 +1,8 @@
+Lucas Lee
+SoftDev pd2
+K40 -- mongodb
+2022-05-12
+
+- atlas can give suggestions for schema based on past queries
+- atlas can generate piplines in various languages for use later on
+- chart allows for easy visualizations on atlas

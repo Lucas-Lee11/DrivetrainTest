@@ -1,0 +1,11 @@
+Lucas Lee
+SoftDev pd2
+K39 -- mongodb
+2022-05-12
+
+- aggregation is a pipeline that filters in order
+    - can also group data
+    - can do what find() can do
+- sort based on increasing/decreasing order
+- limit to get only some results
+- index can help sort to improve performance of searching
